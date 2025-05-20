@@ -36,3 +36,35 @@ canvas#heroCanvas {
   font-size: clamp(2rem, 4vw, 3.5rem);
   margin-bottom: 0;
 }
+
+.hero a{
+  font-family: 'Raleway';
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: rgb(75, 182, 75);
+  border: 2px rgb(75, 182, 75) solid;
+  border-radius: 8px;
+  margin-top: 16px;
+  text-decoration: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 2px solid;
+  outline-color: rgba(89, 238, 89, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 2px solid;
+  box-shadow: inset 0 0 40px rgba(101, 226, 76, 0.801), 0 0 20px rgba(98, 255, 59, 0.63);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}

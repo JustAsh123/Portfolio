@@ -1,0 +1,26 @@
+.about{
+    height: 100vh;
+}
+
+.about-heading{
+    color: white;
+    margin-top: 80px;
+}
+
+.highlight {
+  position: relative;
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 42px;
+  bottom: 5px;
+  width: 80%;
+  height: 20px;
+  background-color: rgb(91, 212, 91);
+  z-index: -1;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" data-bs-theme="dark" />
-    <title>Hero Canvas</title>
+    <title>Ashmit kumar</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
@@ -15,14 +15,19 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_downward"
+    />
 
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" id="hero">
       <canvas id="heroCanvas"></canvas>
       <div
         class="header d-flex flex-column justify-content-center align-items-center text-center"
@@ -31,13 +36,30 @@
           Hello, I am <span style="color: rgb(72, 235, 99)">Ash</span>.
         </p>
         <p class="heading">I'm a full stack web developer.</p>
+        <a href="#about" class="btn-5">
+          View my work
+          <span class="material-symbols-outlined"
+                style="font-size: 1.5rem;"> arrow_downward </span>
+        </a>
       </div>
     </div>
     <div class="navbar bg-dark navbar-dark">
-      <a href="" class="nav-item">Home</a>
-      <a href="" class="nav-item">About</a>
+      <a href="#hero" class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About</a>
       <a href="" class="nav-item">Projects</a>
       <a href="" class="nav-item nav-item-last">Contact</a>
+    </div>
+    <div class="about d-flex justify-content-center text-center" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="about-heading"><span class="highlight">About</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg"></div>
+        </div>
+      </div>
     </div>
     <script src="./scripts/dots.js"></script>
   </body>
