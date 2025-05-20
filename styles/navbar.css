@@ -32,6 +32,10 @@
 }
 
 @media (min-width:621px) and (max-width:1200px) {
+    .navbar{
+        justify-content: center;
+    }
+    
     .nav-item-last{
         margin-right: 0;
     }
