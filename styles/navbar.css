@@ -1,0 +1,35 @@
+.navbar{
+    justify-content: flex-end;
+}
+
+.nav-item{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s;
+    margin-left: 32px;
+}
+
+.nav-item-last{
+    margin-right: 100px;
+}
+
+.nav-item:hover{
+    color: rgb(91, 212, 91);
+}
+
+
+@media (max-width:700px) {
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .nav-item{
+        margin: 0;
+    }
+}
+
+@media (min-width:701px) and (max-width:1200px) {
+    .nav-item-last{
+        margin-right: 0;
+    }
+}
