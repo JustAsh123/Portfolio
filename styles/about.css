@@ -7,24 +7,6 @@
   margin-top: 80px;
 }
 
-.highlight {
-  position: relative;
-  font-size: 56px;
-  font-weight: bold;
-  color: white;
-}
-
-.highlight::after {
-  content: "";
-  position: absolute;
-  left: 42px;
-  bottom: 5px;
-  width: 80%;
-  height: 20px;
-  background-color: rgb(91, 212, 91);
-  z-index: -1;
-}
-
 .about-content{
   margin-top: 70px;
 }
@@ -53,6 +35,7 @@
   color: white;
   text-align: left;
   margin-top: 12px;
+  width: 80%;
 }
 
 .skill-box {
