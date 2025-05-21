@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
   </head>
   <body>
     <div class="hero" id="hero">
@@ -49,7 +50,7 @@
       <a href="#hero" class="nav-item">Home</a>
       <a href="#about" class="nav-item">About</a>
       <a href="#projects" class="nav-item">Projects</a>
-      <a href="" class="nav-item nav-item-last">Contact</a>
+      <a href="#contact" class="nav-item nav-item-last">Contact</a>
     </div>
     <div class="about d-flex justify-content-center text-center" id="about">
       <div class="container">
@@ -181,30 +182,86 @@
       </div>
     </div>
     <div class="projects" id="projects">
-  <div class="custom-container">
-    <div class="projects-heading">
-      <p class="about-heading" style="margin-top: 40px;"><span class="highlight">Projects</span></p>
-    </div>
+      <div class="custom-container">
+        <div class="projects-heading">
+          <p class="about-heading" style="margin-top: 40px">
+            <span class="highlight">Projects</span>
+          </p>
+        </div>
 
-    <div class="project">
-      <div class="project-image-container">
-        <img src="./public/bloggit.png" />
-      </div>
-      <div class="project-details">
-        <h1 class="project-title">Bloggit</h1>
-        <p>
-          Full stack social media application built with React, Node.js,
-          Express.js, Firebase, Github and Netlify.
-        </p>
-        <div class="project-buttons">
-          <a href="https://bloggitash.netlify.app/">Live App</a>
-          <a href="https://github.com/JustAsh123/Bloggit">Learn More</a> 
+        <div class="project">
+          <div class="project-image-container">
+            <img src="./public/bloggit.png" />
+          </div>
+          <div class="project-details">
+            <h1 class="project-title">Bloggit</h1>
+            <p>
+              Full stack social media application built with React, Node.js,
+              Express.js, Firebase, Github and Netlify.
+            </p>
+            <div class="project-buttons">
+              <a href="https://bloggitash.netlify.app/">Live App</a>
+              <a href="https://github.com/JustAsh123/Bloggit">Learn More</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <div
+      class="contact d-flex justify-content-center align-items-center text-center flex-column"
+      id="contact"
+    >
+      <div class="contact-content d-flex flex-column">
+        <h1 class="about-headin"><span class="highlight">Contact</span></h1>
+        <p class="contact-text">
+          Have a question or want to work together? Leave your details and I'll
+          get back to you as soon as possible.
+        </p>
+        <input
+          class="input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+        />
+        <input
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+        />
+        <input type="text" class="input" id="title" name="title" placeholder="Title">
+        <textarea
+          class="input"
+          name="message"
+          id="message"
+          placeholder="Message"
+        ></textarea>
+        <div class="d-flex justify-content-end">
+          <button class="theme-button" id="contact-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./scripts/dots.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "E0LZKU1fxblWJX5rH",
+        });
+      })();
+    </script>
+    <script src="./scripts/emailjs.js"></script>
   </body>
 </html>
