@@ -1,0 +1,164 @@
+.projects {
+  padding: 60px 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+/* Image container with fixed max width and flexible shrinking */
+.project-image-container {
+  flex: 0 0 1000px; /* fixed width */
+  max-width: 100%;  /* responsive */
+}
+
+.project-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Details take remaining space, min width to avoid squish */
+.project-details {
+  flex: 1 1 300px; /* grow, shrink, base width */
+  text-align: left;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+/* Title */
+.project-details h1 {
+  font-size: 3rem;
+  margin: 0 0 15px;
+}
+
+/* Paragraph - allow wrapping and growing */
+.project-details p {
+  font-size: 1.4rem;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start; /* Prevent stretch, align buttons left */
+
+}
+
+
+.project-buttons button {
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 3px solid #3a6f0a; /* dark lime */
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* The animated background */
+.project-buttons button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #3a6f0a; /* same dark lime */
+  z-index: -1;
+  transition: height 0.3s ease;
+}
+
+/* On hover expand the background from bottom to top */
+.project-buttons button:hover::before {
+  height: 100%;
+}
+
+/* On hover, text becomes white (or you can change if you want) */
+.project-buttons button:hover {
+  color: white;
+}
+
+/* Responsive: stack vertically below 1024px */
+@media (max-width: 1024px) {
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-image-container {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .project-details {
+    flex: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .project-details h1 {
+    font-size: 2.4rem;
+  }
+  
+  .project-details p {
+    font-size: 1.2rem;
+  }
+  
+  .project-buttons {
+    justify-content: flex-start;
+  }
+  .project-buttons {
+  display: flex;
+  flex-direction: row; /* default */
+  gap: 10px;
+  flex-wrap: wrap;    /* wrap if needed */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+}
+
+/* Smaller mobile tweaks */
+@media (max-width: 600px) {
+  .projects {
+    padding: 40px 15px;
+  }
+  
+  .project-details h1 {
+    font-size: 1.8rem;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+  }
+  .project-buttons {
+  display: flex;
+  flex-direction: row; /* default */
+  gap: 10px;
+  flex-wrap: wrap;    /* wrap if needed */
+  justify-content: flex-start;
+  align-items: center;
+}
+}

@@ -1,10 +1,8 @@
-.about {
-  height: 100vh;
-}
-
 .about-heading {
   color: white;
   margin-top: 80px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .about-content{
@@ -96,5 +94,19 @@
 
   .skill-inner p {
     font-size: 12px;
+  }
+}
+
+.d-flex {
+  flex-wrap: wrap !important;  /* allow wrapping */
+  gap: 15px;                   /* space between skill boxes */
+  justify-content: flex-start; /* or center if you want */
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 480px) {
+  .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
   }
 }
