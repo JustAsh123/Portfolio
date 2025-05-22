@@ -90,3 +90,19 @@ canvas#heroCanvas {
     padding: 0.5rem 1.5rem;
   }
 }
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.arrow-icon {
+  font-size: 1.6rem;
+  font-variation-settings: 'FILL' 1, 'wght' 700;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
