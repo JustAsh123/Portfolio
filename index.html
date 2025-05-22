@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/projects.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
     <div class="hero" id="hero">
@@ -207,10 +208,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="contact d-flex justify-content-center align-items-center text-center flex-column"
-      id="contact"
-    >
+    <div class="contact d-flex flex-column" id="contact">
       <div class="contact-content d-flex flex-column">
         <h1 class="about-headin"><span class="highlight">Contact</span></h1>
         <p class="contact-text">
@@ -231,7 +229,13 @@
           id="email"
           placeholder="E-mail"
         />
-        <input type="text" class="input" id="title" name="title" placeholder="Title">
+        <input
+          type="text"
+          class="input"
+          id="title"
+          name="title"
+          placeholder="Title"
+        />
         <textarea
           class="input"
           name="message"
@@ -241,6 +245,9 @@
         <div class="d-flex justify-content-end">
           <button class="theme-button" id="contact-submit">Submit</button>
         </div>
+      </div>
+      <div class="footer d-flex justify-content-center align-items-center text-center">
+        <p>GITHUB</p>
       </div>
     </div>
 

@@ -1,0 +1,9 @@
+.footer {
+  background-color: rgb(54, 54, 54);
+  height: 130px;
+  width: 100%;
+}
+
+.footer p{
+    color: white;
+}
