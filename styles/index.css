@@ -68,3 +68,7 @@ body{
 .theme-button:hover{
   color: white;
 }
+
+section {
+  scroll-margin-top: 80px; /* Adjust to your navbar height */
+}
