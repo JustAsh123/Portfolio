@@ -40,3 +40,7 @@
         margin-right: 0;
     }
 }
+
+.active{
+    color: rgb(17, 145, 17);
+}

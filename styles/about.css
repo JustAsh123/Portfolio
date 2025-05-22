@@ -1,3 +1,7 @@
+#about{
+  min-height: 100vh;
+}
+
 .about-heading {
   color: white;
   margin-top: 80px;
