@@ -1,7 +1,7 @@
 window.onload = function () {
       const canvas = document.getElementById('bgCanvas');
       const ctx = canvas.getContext('2d');
-
+      const speed = 0.7
       function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -19,8 +19,8 @@ window.onload = function () {
           y: Math.random() * canvas.height,
           r: 0.7,
           color: Math.random() > 0.5 ? 'lime' : 'white',
-          dx: (Math.random() - 0.5) * 0.3,
-          dy: (Math.random() - 0.5) * 0.3,
+          dx: (Math.random() - 0.5) * speed,
+          dy: (Math.random() - 0.5) * speed,
         });
       }
 
