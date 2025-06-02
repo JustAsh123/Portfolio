@@ -41,17 +41,17 @@
 }
 
 .skill-box {
-  width: 140px;      /* slightly wider than tall */
+  width: 180px;      /* slightly wider than tall */
   height: 110px;
   padding: 3px;      /* thin border */
-  border-radius: 18px;
+  border-radius: 12px;
   background: linear-gradient(135deg, white, lime);
   box-sizing: border-box;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .skill-inner {
@@ -76,11 +76,12 @@
   width: 60px;
   height: 60px;
   margin-bottom: 6px;
+  border-radius: 4px;
 }
 
 .skill-inner p {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 /* Responsive */
