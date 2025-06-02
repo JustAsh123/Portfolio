@@ -9,9 +9,22 @@
   margin-bottom: 60px;
 }
 
-.about-content{
-  margin-top: 70px;
+@keyframes zoomInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
+
+.about-content {
+  margin-top: 70px;
+  animation: zoomInFromLeft 1s ease forwards;
+}
+
 
 .gradient-border {
   background: linear-gradient(
@@ -114,4 +127,21 @@
     flex-direction: column !important;
     align-items: center !important;
   }
+}
+
+@keyframes appearFromThinAir {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.skill-box {
+  opacity: 0;              /* start invisible */
+  transform: scale(0.3);   /* start small */
+  animation-fill-mode: forwards;
 }
