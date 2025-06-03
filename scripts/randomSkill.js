@@ -29,7 +29,7 @@ document.querySelector('.hero-link').addEventListener('click', (e) => {
       box.style.animation = 'none';
       void box.offsetWidth;  // trigger reflow
       const randomDelay = (Math.random() * 1.2).toFixed(2);
-      box.style.animation = `appearFromThinAir 0.4s ease forwards`;
+      box.style.animation = `appearFromThinAir 0.8s ease forwards`;
       box.style.animationDelay = `${randomDelay}s`;  // just random stagger after 500ms
     });
   }, 500);

@@ -140,6 +140,7 @@
   }
 }
 
+
 .skill-box {
   opacity: 0;              /* start invisible */
   transform: scale(0.3);   /* start small */
