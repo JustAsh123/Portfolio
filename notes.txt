@@ -1,0 +1,13 @@
+Skills i know : 
+    HTML
+    CSS
+    Javascript
+
+    Express
+    Node
+    React
+    C++
+
+    Java
+    Python
+    Firebase
