@@ -38,12 +38,6 @@
   padding-top: 40px;
 }
 
-/* Title */
-.project-details h1 {
-  font-size: 3rem;
-  margin: 0 0 15px;
-}
-
 /* Paragraph - allow wrapping and growing */
 .project-details p {
   font-size: 1.4rem;
@@ -75,6 +69,24 @@
   overflow: hidden;
   transition: color 0.3s ease;
   text-decoration: none;
+}
+
+.project-opp{
+  flex-direction: row-reverse;
+}
+
+.project-opp > .project-details{
+  text-align: right;
+}
+
+.project-opp  .project-buttons{
+  align-items: flex-end;
+}
+
+/* Title */
+.project-details h1 {
+  font-size: 3rem;
+  margin: 0 0 15px;
 }
 
 /* The animated background */
